@@ -1,5 +1,4 @@
 ---
-layout: post
 title: HTML5大赛感 (一)：尝试
 tags:
 - 直觉
