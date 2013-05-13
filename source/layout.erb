@@ -6,32 +6,28 @@
     <%= stylesheet_link_tag "all" %>
   </head>
   <body>
+    <header class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="/">Jiang Peng's World</a>
+          <ul class="nav pull-right">
+            <li class="active"><a href="index.html">Blog</a></li>
+            <li><a href="/about.html">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="container main-content">
     
-    <div id="main" role="main">
-      <%= yield %>
+      <div id="main" role="main">
+        <%= yield %>
+      </div>
+      
     </div>
-    
-    <aside>
-      <h2>Recent Articles</h2>
-      <ol>
-        <% blog.articles[0...10].each do |article| %>
-          <li><%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span></li>
-        <% end %>
-      </ol>
-
-      <h2>Tags</h2>
-      <ol>
-        <% blog.tags.each do |tag, articles| %>
-          <li><%= link_to tag, tag_path(tag) %> (<%= articles.size %>)</a></li>
-        <% end %>
-      </ol>
-
-      <h2>By Year</h2>
-      <ol>
-        <% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
-          <li><%= link_to year, blog_year_path(year) %> (<%= articles.size %>)</a></li>
-        <% end %>
-      </ol>
-    </aside>
+    <footer class="footer">
+      <div class="container">
+        footer
+      </div>
+    </footer>
   </body>
 </html>
