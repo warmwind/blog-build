@@ -11,8 +11,11 @@
     @include border-radius(5px);
     @include box-shadow(0 0 20px #ccc);
     .title-area{
+      h3 {
+        margin: 9px auto;
+        line-height: 110%;
+      }
       border-bottom: 1px solid #ccc;
-      line-height: 300%;
       margin-bottom: 15px;
       a{
         color: black;
@@ -54,10 +57,6 @@
     }
     &.left-column {
       margin-left: 20px;
-    }
-    h3 {
-      margin: 0 auto;
-      line-height: 110%;
     }
     .arrow-left{
       position: absolute;

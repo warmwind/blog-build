@@ -109,9 +109,3 @@ configure :build do
   # Or use a different image path
   # set :http_path, "/Content/images/"
 end
-
-ready do
-  sitemap.resources.group_by {|p| p.data["category"] }.each do |category, pages|
-    proxy "/categories/#{category}.html", "category.html", :locals => { :category => category, :pages => pages }
-  end
-end
