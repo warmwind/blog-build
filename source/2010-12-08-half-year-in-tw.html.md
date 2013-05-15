@@ -5,6 +5,7 @@ tags:
 - coach
 - pair
 - Work
+date: 2010-12-08
 status: publish
 type: post
 published: false

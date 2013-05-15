@@ -5,6 +5,7 @@ tags:
 - Collision Detection
 - 碰撞检测
 - Programming
+date: 2011-06-01
 status: publish
 type: post
 published: true

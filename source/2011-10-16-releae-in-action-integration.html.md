@@ -6,6 +6,7 @@ tags:
 - heroku
 - Work
 - 测试
+date: 2011-10-16
 status: publish
 type: post
 published: true

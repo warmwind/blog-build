@@ -4,6 +4,7 @@ tags:
 - MapReduce
 - MongoDB
 - Programming
+date: 2012-11-26
 status: publish
 type: post
 published: true

@@ -6,6 +6,7 @@ tags:
 - Programming
 - refactor
 - 测试
+date: 2011-03-17
 status: publish
 type: post
 published: true

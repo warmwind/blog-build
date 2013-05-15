@@ -4,6 +4,7 @@ tags:
 - DEV
 - QA
 - Work
+date: 2010-12-08
 status: publish
 type: post
 published: true

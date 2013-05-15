@@ -4,6 +4,7 @@ tags:
 - Metaprogramming
 - Programming
 - Ruby
+date: 2012-02-02
 status: publish
 type: post
 published: true

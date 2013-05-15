@@ -7,6 +7,7 @@ tags:
 - Programming
 - Rails
 - Spring MVC
+date: 2011-01-11
 status: publish
 type: post
 published: true

@@ -5,6 +5,7 @@ tags:
 - Javascript
 - Node.js
 - Programming
+date: 2011-07-04
 status: publish
 type: post
 published: true

@@ -6,6 +6,7 @@ tags:
 - Model
 - Programming
 - View
+date: 2013-02-15
 status: publish
 type: post
 published: true

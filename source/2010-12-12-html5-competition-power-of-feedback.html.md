@@ -5,6 +5,7 @@ tags:
 - HTML5
 - showcase
 - Work
+date: 2010-12-12
 status: publish
 type: post
 published: true

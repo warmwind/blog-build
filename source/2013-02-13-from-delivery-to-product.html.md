@@ -10,6 +10,7 @@ tags:
 - Java
 - Rails
 - Work
+date: 2013-02-13
 status: publish
 type: post
 published: true

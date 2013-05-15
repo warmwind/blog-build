@@ -5,6 +5,7 @@ tags:
 - mule ESB
 - Programming
 - ssh
+date: 2011-01-13
 status: publish
 type: post
 published: true

@@ -8,6 +8,7 @@ tags:
 - mysql
 - Programming
 - ssh
+date: 2010-12-28
 status: publish
 type: post
 published: true

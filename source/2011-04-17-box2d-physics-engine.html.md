@@ -6,6 +6,7 @@ tags:
 - 物理引擎
 - Physics Engine
 - Programming
+date: 2011-04-17
 status: publish
 type: post
 published: true
