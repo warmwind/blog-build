@@ -1,8 +1,8 @@
 ---
 title: ! 'Inside Ruby: Object Model'
+category: PROGRAMMING
 tags:
 - Metaprogramming
-- Programming
 - Ruby
 date: 2012-02-02
 status: publish

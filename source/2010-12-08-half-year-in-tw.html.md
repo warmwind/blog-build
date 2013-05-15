@@ -1,10 +1,10 @@
 ---
 title: Half a year in TW
+category: WORK
 tags:
 - 压力
 - coach
 - pair
-- Work
 date: 2010-12-08
 status: publish
 type: post

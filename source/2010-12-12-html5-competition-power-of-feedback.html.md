@@ -1,10 +1,10 @@
 ---
 title: ! 'HTML5大赛感 (二) : Power of Feedback'
+category: WORK
 tags:
 - feedback
 - HTML5
 - showcase
-- Work
 date: 2010-12-12
 status: publish
 type: post

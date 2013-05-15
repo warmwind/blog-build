@@ -1,8 +1,8 @@
 ---
 title: Test For DateTime
+category: PROGRAMMING
 tags:
 - DateTime
-- Programming
 - test
 - 测试
 date: 2010-12-08

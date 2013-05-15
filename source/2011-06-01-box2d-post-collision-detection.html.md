@@ -1,10 +1,10 @@
 ---
 title: Box2D-Post Collision Detection
+category: PROGRAMMING
 tags:
 - Box2D
 - Collision Detection
 - 碰撞检测
-- Programming
 date: 2011-06-01
 status: publish
 type: post

@@ -1,11 +1,11 @@
 ---
 title: 软件发布实战 -- 状态检查
+category: WORK
 tags:
 - 发布
 - 集成
 - feedback
 - Health Check
-- Work
 date: 2011-10-16
 status: publish
 type: post

@@ -1,5 +1,6 @@
 ---
 title: Box2D-Collision Detection
+category: PROGRAMMING
 tags:
 - Angry Birds
 - Box2D
@@ -7,7 +8,6 @@ tags:
 - Collision Detection
 - 碰撞检测
 - 物理引擎
-- Programming
 - showcase
 - TOI
 - Tunneling

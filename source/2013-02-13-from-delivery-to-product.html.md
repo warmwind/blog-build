@@ -1,5 +1,6 @@
 ---
 title: 从交付到产品
+category: WORK
 tags:
 - .Net
 - Android
@@ -9,7 +10,6 @@ tags:
 - 用户
 - Java
 - Rails
-- Work
 date: 2013-02-13
 status: publish
 type: post

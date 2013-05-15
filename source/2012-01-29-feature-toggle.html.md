@@ -1,7 +1,7 @@
 ---
 title: Feature Toggle
+category: PROGRAMMING
 tags:
-- Programming
 date: 2012-01-29
 status: publish
 type: post

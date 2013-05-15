@@ -1,9 +1,9 @@
 ---
 title: HTML5大赛感 (一)：尝试
+category: WORK
 tags:
 - 直觉
 - HTML5
-- Work
 date: 2010-12-09
 status: publish
 type: post

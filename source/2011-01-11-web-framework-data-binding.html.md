@@ -1,10 +1,10 @@
 ---
 title: Web Framework大杂烩（一）：Data Binding
+category: PROGRAMMING
 tags:
 - ASP.NET MVC
 - Data Binding
 - Name convention
-- Programming
 - Rails
 - Spring MVC
 date: 2011-01-11

@@ -1,9 +1,9 @@
 ---
 title: Inside CoffeeScript：语法强大
+category: PROGRAMMING
 tags:
 - CoffeeScript
 - Javascript
-- Programming
 date: 2012-05-26
 status: publish
 type: post

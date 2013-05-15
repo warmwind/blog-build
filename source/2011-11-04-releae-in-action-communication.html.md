@@ -1,9 +1,9 @@
 ---
 title: 软件发布实战 -- 沟通
+category: WORK
 tags:
 - 发布
 - 迁移
-- Work
 date: 2011-11-04
 status: publish
 type: post

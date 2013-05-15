@@ -1,8 +1,8 @@
 ---
 title: ! 'Inside Ruby: Eigenclass'
+category: PROGRAMMING
 tags:
 - Eigenclass
-- Programming
 - Ruby
 date: 2012-02-03
 status: publish

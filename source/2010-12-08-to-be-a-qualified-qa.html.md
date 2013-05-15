@@ -1,9 +1,9 @@
 ---
 title: 做一个合格的兼职QA
+category: WORK
 tags:
 - DEV
 - QA
-- Work
 date: 2010-12-08
 status: publish
 type: post

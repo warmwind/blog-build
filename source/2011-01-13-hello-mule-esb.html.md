@@ -1,9 +1,9 @@
 ---
 title: Hello Mule ESB
+category: PROGRAMMING
 tags:
 - j2ee
 - mule ESB
-- Programming
 - ssh
 date: 2011-01-13
 status: publish

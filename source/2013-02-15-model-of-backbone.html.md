@@ -1,10 +1,10 @@
 ---
 title: Backbone中的Model
+category: PROGRAMMING
 tags:
 - Backbone
 - Javascript
 - Model
-- Programming
 - View
 date: 2013-02-15
 status: publish

@@ -1,9 +1,9 @@
 ---
 title: ! 'MapReduce: 一个i和1导致的悲剧'
+category: PROGRAMMING
 tags:
 - MapReduce
 - MongoDB
-- Programming
 date: 2012-11-26
 status: publish
 type: post
