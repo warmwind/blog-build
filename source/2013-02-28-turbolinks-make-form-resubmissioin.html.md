@@ -1,7 +1,7 @@
 ---
 title: Turbolinks导致的表单重复提交警告问题
-category: Programming
-tags: Ajax,Javascript,PRG,Programming,Rails,Turbolinks
+category: PROGRAMMING
+tags: Ajax,Javascript,PRG,Rails,Turbolinks
 date: 2013-02-28
 status: publish
 type: post
