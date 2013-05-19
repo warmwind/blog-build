@@ -13,7 +13,7 @@ meta:
 ---
 第一次听说CoffeeScript是Rails 3.1将它作为默认的支持，第二次深入的理解是Nodejs的兴起，CoffeeScript用它独特的语法样式，使我这个面向对象出身的程序员在写JavaScript时找到了似曾相识的感觉。当然如果对它的理解仅仅停留在语法的简化，那么只能说对[JS(The World's Most Misunderstood Programming Language)](http://javascript.crockford.com/javascript.html)本身并不熟悉。
 
-[<<JavaScript语言精粹>>](http://book.douban.com/subject/3590768/)一书中提交了很多JS本身语法存在的缺陷，例如全局变量，分号自动补全，==等。CoffeeScript的golden rule是“It's just JavaScript”, 但是它如何避免这些陷阱，则从另一方面体现了它的强大。本文将从语法强大方面来举例分析。
+[<< JavaScript语言精粹 >>](http://book.douban.com/subject/3590768/)一书中提交了很多JS本身语法存在的缺陷，例如全局变量，分号自动补全，==等。CoffeeScript的golden rule是“It's just JavaScript”, 但是它如何避免这些陷阱，则从另一方面体现了它的强大。本文将从语法强大方面来举例分析。
 
 1）函数默认参数 + 字符串连接
 

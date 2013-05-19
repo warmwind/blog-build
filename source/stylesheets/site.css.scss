@@ -35,17 +35,6 @@
     .tag-area{
       ul{
         margin: 0;
-        li{
-          font-size: 12px;
-          list-style: none;
-          @include inline-block;
-          background: #aaa;
-          padding: 5px;
-          letter-spacing: 1px;
-          a {
-            color: white;
-          }
-        }
       }
       .continue-reading {
         float: right;
@@ -110,7 +99,31 @@
 
 #main{
   background: url('../images/timeline-bg.png') center top repeat-y;
+  .highlight .main-content {
+    pre{
+      line-height: 100%;
+    }
+  }
   .right-column {
     margin-right: 20px;
+  }
+  .tag{
+    font-size: 12px;
+    list-style: none;
+    @include inline-block;
+    background: #aaa;
+    padding: 5px;
+    letter-spacing: 1px;
+    a {
+      color: white;
+    }
+  }
+  &.tags {
+    .tag-title {
+      font-size: 16px;
+      color: white;
+      margin-left: 20px;
+      margin-top: 20px;
+    }
   }
 }

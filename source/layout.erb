@@ -4,16 +4,15 @@
     <meta charset="utf-8" />
     <meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
     <%= stylesheet_link_tag "all" %>
+    <%= javascript_include_tag "application" %>
   </head>
   <body>
     <header class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
-          <a class="brand" href="/">Jiang Peng's World</a>
-          <ul class="nav pull-right">
-            <li class='active'><a href="/index.html">Blog</a></li>
-            <li><a href="/categories.html">Categories</a></li>
-            <li><a href="/about.html">About</a></li>
+          <a class="brand" href="/">Jiang Peng's Warm Wind</a>
+          <ul class="nav nav-pills pull-right">
+            <%= yield_content :navs %>
           </ul>
         </div>
       </div>

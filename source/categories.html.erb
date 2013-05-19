@@ -1,4 +1,9 @@
-<aside class='clearfix'>
+<% content_for :navs do %>
+  <li><a href="/index.html">近期文章</a></li>
+  <li class='active'><a href="/categories.html">所有文章</a></li>
+  <li><a href="/about.html">关于我</a></li>
+<% end %>
+<div class='clearfix'>
   <ol>
     <% blog.articles.group_by{|a| a.date.year}.each do |year, articles| %>
       <h3><%= "#{year} (#{articles.size})" %></h3>
@@ -7,4 +12,4 @@
       <% end %>      
     <% end %>
   </ol>
-</aside>
+</div>
