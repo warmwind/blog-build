@@ -78,6 +78,7 @@ page "/feed.xml", :layout => false
 #     "Helping"
 #   end
 # end
+helpers Gravatarify::Helper
 
 set :css_dir, 'stylesheets'
 

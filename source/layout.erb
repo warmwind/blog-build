@@ -10,7 +10,9 @@
     <header class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
-          <a class="brand" href="/">Jiang Peng's Warm Wind</a>
+          <a class="brand" href="/"><%= gravatar_tag 'pengj0520@gmail.com', :size => 60 %>
+            <span class="title">Jiang Peng's Warm Wind</span>
+          </a>
           <ul class="nav nav-pills pull-right">
             <%= yield_content :navs %>
           </ul>

@@ -21,6 +21,7 @@ GEM
     execjs (1.4.0)
       multi_json (~> 1.0)
     fssm (0.2.10)
+    gravatarify (3.1.0)
     haml (4.0.2)
       tilt
     hike (1.2.2)
@@ -126,6 +127,7 @@ PLATFORMS
 
 DEPENDENCIES
   builder (~> 3.0.0)
+  gravatarify (~> 3.1.0)
   middleman (~> 3.0.13)
   middleman-blog (~> 3.2.0)
   middleman-livereload (~> 3.1.0)

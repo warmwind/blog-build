@@ -8,3 +8,17 @@
 
 // [class*="span"] {
 //   margin-left: 0; }
+
+.container{
+  .brand {
+    img {
+      @include border-radius(50%);
+    }
+    span {
+      margin-left: 10px;
+    }
+  }
+  .nav {
+    margin: 20px auto;
+  }
+}
