@@ -1,5 +1,5 @@
 <% wrap_layout :layout do %>
-  <article class='article-container clearfix'>
+  <article class='article-container clearfix row'>
     <div class="span1 date">
       <span class='month'><%= current_page.date.strftime('%b').upcase %><span>
       <span class="day"><%= current_page.date.strftime('%e') %></span>
@@ -24,7 +24,12 @@
         </ol>
       </div>
     </div>
-  <%= partial "disqus" %>  
+    
   </article>
+  <div class="row">
+    <div class="span1"></div>
+    <div class="span7"><%= partial "disqus" %></div>
+    <div class="span3"></div>
+  </div>
   
 <% end %>
