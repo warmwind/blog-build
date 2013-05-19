@@ -2,52 +2,53 @@
 pageable: true
 per_page: 10
 ---
-
-<% page_articles.each_with_index do |article, i| %>
-  <% column_pos = i.even? ? 'left' : 'right' %>
-  <% arrow_pos = i.even? ? 'right' : 'left' %>
-  <% if i.even? %>
-    <div class='rows clearfix blog-line'>
-  <% end %>
-    <div class="span5 blog-item pull-<%= column_pos %> <%= column_pos %>-column">
-      <div class="arrow-<%= arrow_pos %>"></div>
-      <div class="title-area">
-        <h3><%= link_to article.title, article %> </h3>
-      </div>
-      <div class="content-area">
-        <%= article.summary(250) %>  
-      </div>
-      <div class="tag-area">
-        <ul class= 'pull-left'>
-          <% article.tags.each do |tag| %>
-            <li><%= link_to tag, tag_path(tag) %></li>
-          <% end %>
-        </ul>
-        <span class='continue pull-right'><%= link_to '继续阅读 >>', article %> </span>
-      </div>
-      <div class="timeline-point <%= column_pos %>">
-        <div class='publish-date'>
-          <%= article.date.strftime('%e') %><br /><%= article.date.strftime('%b') %>
+<div id="main" role="main">
+  <% page_articles.each_with_index do |article, i| %>
+    <% column_pos = i.even? ? 'left' : 'right' %>
+    <% arrow_pos = i.even? ? 'right' : 'left' %>
+    <% if i.even? %>
+      <div class='rows clearfix blog-line'>
+    <% end %>
+      <div class="span5 blog-item pull-<%= column_pos %> <%= column_pos %>-column">
+        <div class="arrow-<%= arrow_pos %>"></div>
+        <div class="title-area">
+          <h3><%= link_to article.title, article %> </h3>
+        </div>
+        <div class="content-area">
+          <%= article.summary(250) %>  
+        </div>
+        <div class="tag-area">
+          <ul class= 'pull-left'>
+            <% article.tags.each do |tag| %>
+              <li><%= tag %></li>
+            <% end %>
+          </ul>
+          <span class='continue pull-right'><%= link_to '继续阅读 >>', article %> </span>
+        </div>
+        <div class="timeline-point <%= column_pos %>">
+          <div class='publish-date'>
+            <%= article.date.strftime('%e') %><br /><%= article.date.strftime('%b') %>
+          </div>
         </div>
       </div>
-    </div>
-  <% unless i.even? %>
-    </div>
-  <%end%>
+    <% unless i.even? %>
+      </div>
+    <%end%>
 
-<% end %>
-
-<div class='rows paginate'>
-  <% if paginate %>
-    <% if prev_page %>
-    <div class="span2 pull-left"><%= link_to 'Previous page', prev_page %></div>
-    <% end %>
   <% end %>
 
-
-  <% if paginate %>
-    <% if next_page %>
-      <div class="span2 pull-right"><%= link_to 'Next page', next_page %></div>
+  <div class='rows paginate'>
+    <% if paginate %>
+      <% if prev_page %>
+      <div class="span2 pull-left"><%= link_to 'Previous page', prev_page %></div>
+      <% end %>
     <% end %>
-  <% end %>
+
+
+    <% if paginate %>
+      <% if next_page %>
+        <div class="span2 pull-right"><%= link_to 'Next page', next_page %></div>
+      <% end %>
+    <% end %>
+  </div>
 </div>

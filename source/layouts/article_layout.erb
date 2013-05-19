@@ -1,0 +1,29 @@
+<% wrap_layout :layout do %>
+  <article class='article-container clearfix'>
+    <div class="span1 date">
+      <span class='month'><%= current_page.date.strftime('%b').upcase %><span>
+      <span class="day"><%= current_page.date.strftime('%e') %></span>
+      <span class="year"><%= current_page.date.strftime('%Y') %></span>
+    </div>
+    <div class="span7">
+      <h2><%= current_page.title %></h2>
+      <%= yield %>
+    </div>
+    <div class="span3 right-col">
+      <div class="about">
+        <h4>关于我</h4>
+        <div class="name">姜鹏</div>
+        <div class="name">Developer in ThoughtWorks</div>
+      </div>
+      <div class="recent">
+        <h4>最近的文章</h4>
+        <ol>
+          <% blog.articles[0...10].each do |article| %>
+            <li><%= link_to article.title, article %></li>
+          <% end %>
+        </ol>
+      </div>
+    </div>
+    
+  </article>
+<% end %>

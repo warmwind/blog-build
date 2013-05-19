@@ -1,0 +1,10 @@
+<aside class='clearfix'>
+  <ol>
+    <% blog.articles.group_by{|a| a.date.year}.each do |year, articles| %>
+      <h3><%= "#{year} (#{articles.size})" %></h3>
+      <% articles.each do |article| %>
+      <li><%= link_to article.title, article %> <span><%= article.date.strftime('%b %e %Y') %></span></li>
+      <% end %>      
+    <% end %>
+  </ol>
+</aside>
