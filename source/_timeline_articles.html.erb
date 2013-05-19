@@ -13,11 +13,7 @@
         <%= article.summary(250) %>  
       </div>
       <div class="tag-area">
-        <ul class= 'pull-left'>
-          <% article.tags.each do |tag| %>
-            <li class='tag'><%= link_to tag, tag_path(tag) %></li>
-          <% end %>
-        </ul>
+        <%= partial :tags, locals: {tags: article.tags} %>
         <span class='continue pull-right'><%= link_to '继续阅读 >>', article %> </span>
       </div>
       <div class="timeline-point <%= column_pos %>">
