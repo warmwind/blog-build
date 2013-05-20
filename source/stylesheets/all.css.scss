@@ -5,11 +5,16 @@
 @import 'line-numbers';
 @import 'site';
 @import 'article';
+@import 'categories';
 
-// [class*="span"] {
-//   margin-left: 0; }
+[class*="span"] {
+  margin-left: 0; }
 
 .container{
+  &.main-content {
+    margin: 100px auto;
+  }
+
   .brand {
     height: 60px;
     img {

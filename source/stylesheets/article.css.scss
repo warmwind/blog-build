@@ -1,6 +1,6 @@
 @import '_mixins';
 .article-container {
-  padding: 20px;
+  padding: 20px 40px;
   p {
     margin-right: 0;
   }
@@ -26,7 +26,7 @@
     }
   }
   .right-col{
-    margin-left: 90px;
+    // margin-left: 90px;
     li{
       list-style: none;
     }
