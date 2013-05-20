@@ -12,6 +12,8 @@ published: true
 meta:
   _edit_last: '1'
 ---
+[Demo](/apps.html#angry_tank)
+
 在检测到碰撞后，我们往往需要进行一些处理，比如在Angry Birds中当小鸟撞击到障碍或者击中猪后，会有碰撞的声音，破碎的效果等，这些都是在碰撞检测后进行处理的。
 
 ![](collison.jpg)

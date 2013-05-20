@@ -5,10 +5,8 @@ tags:
 - Angry Birds
 - Box2D
 - CCD
-- Collision Detection
 - 碰撞检测
 - 物理引擎
-- showcase
 - TOI
 - Tunneling
 date: 2011-06-01
@@ -18,6 +16,8 @@ published: true
 meta:
   _edit_last: '1'
 ---
+[Demo](/apps.html#angry_tank)
+
 碰撞检测是物理引擎中非常重要的部分，一般分为两种：
 
 * Discrete Collision Detection: 离散碰撞检测。

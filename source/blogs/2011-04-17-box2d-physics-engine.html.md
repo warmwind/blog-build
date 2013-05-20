@@ -13,6 +13,8 @@ published: true
 meta:
   _edit_last: '1'
 ---
+[Demo](/apps.html#angry_tank)
+
 Box2D是一个强大的物理引擎(Physics Engine)，有c++, java, js等多种版本。当前流行的Angry birds游戏就使用它作为物理引擎。Wikipedia中给出的定义是：
 > A <a href="http://en.wikipedia.org/wiki/Physics">physics</a> engine is <a href="http://en.wikipedia.org/wiki/Computer_software">computer software</a> that provides an approximate <a title="Computer simulation" href="http://en.wikipedia.org/wiki/Computer_simulation">simulation</a> of certain simple <a title="Physical system" href="http://en.wikipedia.org/wiki/Physical_system">physical systems</a>, such as <a href="http://en.wikipedia.org/wiki/Rigid_body_dynamics">rigid body dynamics</a>(including <a href="http://en.wikipedia.org/wiki/Collision_detection">collision detection</a>), <a href="http://en.wikipedia.org/wiki/Soft_body_dynamics">soft body dynamics</a>, and <a title="Fluid simulation" href="http://en.wikipedia.org/wiki/Fluid_simulation">fluid dynamics</a>, of use in the <a title="wikt:domain" href="http://en.wiktionary.org/wiki/domain">domains</a> of <a href="http://en.wikipedia.org/wiki/Computer_graphics">computer graphics</a>, <a title="Video game" href="http://en.wikipedia.org/wiki/Video_game">video games</a> and <a href="http://en.wikipedia.org/wiki/Film">film</a>. Their main uses are in video games (typically as <a title="Game middleware" href="http://en.wikipedia.org/wiki/Game_middleware">middleware</a>), in which case the <a title="Simulation" href="http://en.wikipedia.org/wiki/Simulation">simulations</a> are in <a title="Real-time computer graphics" href="http://en.wikipedia.org/wiki/Real-time_computer_graphics">real-time</a>. The term is sometimes used more generally to describe any <a href="http://en.wikipedia.org/wiki/Software_system">software system</a> for simulating physical phenomena, such as <a title="High-performance computing" href="http://en.wikipedia.org/wiki/High-performance_computing">high-performance scientific simulation</a>.
 
@@ -22,7 +24,8 @@ Box2D是一个强大的物理引擎(Physics Engine)，有c++, java, js等多种�
 * 上下键调整炮筒的角度
 * 空格键发射炮弹，根据炮筒角度不同炮弹运行的抛物线也不一样
 * 当运行到有坡度的地面时，坦克整体布局不发生改变
-		![](tank.jpg)
+		
+![](tank.jpg)
 
 其中关键技术点包括：
 
