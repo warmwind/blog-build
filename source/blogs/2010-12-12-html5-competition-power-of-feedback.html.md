@@ -13,6 +13,8 @@ meta:
   _edit_last: '1'
   _wp_old_slug: ''
 ---
+[Demo](/apps.html#magic_grid)
+
 Feedback是一种文化，也是一种力量。
 
 文化：
