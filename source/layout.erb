@@ -1,11 +1,12 @@
 <!doctype html>
-<html>
+<html xmlns:wb=“http://open.weibo.com/wb”>
   <head>
     <meta charset="utf-8" />
     <meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
     <meta name="keywords" content="<%= yield_content :keywords %>">
     <%= stylesheet_link_tag "all" %>
     <%= javascript_include_tag "application" %>
+    <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
     <% title = yield_content :title %>
     <title><%= title.present? ? title : current_page.data.title %> - Jiang Peng</title>
 
@@ -26,6 +27,7 @@
     <div class="container main-content">
       <%= yield %>
     </div>
+    <%= yield_content :scripts %>
     <%= partial "ga" %>
   </body>
 </html>
