@@ -14,6 +14,7 @@ Turbolinks将在Rails4中会被默认引入，它类似于PJAX，但是会托管
 尽管Rails4还没有正式发布，但现在的项目已经在使用Turbolinks了，它不需要任何额外的配置，添加到Gemfile后即可。最近遇到了一个问题如下：
 
 几乎所有的应用都会有表单的验证、错误显示、提交并重定向等，比如下面的rails controller中的create action，当post成功存储以后，重定向到post列表页面，如果存储失败，render当前新建页面，由于post实例变量的存在，new页面被render时会自动填入用户已经输入的信息以及validation的错误信息。
+READMORE
 
 ``` ruby
 def create

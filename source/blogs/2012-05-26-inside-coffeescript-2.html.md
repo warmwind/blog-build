@@ -23,7 +23,7 @@ console.log(0 =='');    //true
 console.log(0 == '0');  //true
 ```
 而在CoffeeScript中，如果使用==，将会自动编译为===，这从根本上解决了这个问题，另外还提供了一些更具语义的方法名，如 is, isnt等。
-
+READMORE
 2\. Loop
 
 CoffeeScript有两种循环，针对数组的for ... in和针对对象的for ... of。其中针对对象的循环在JS本身是具有陷阱的。JS中对对象的循环会将对象整个原型链中的属性全部都包括进来，所以通常需要使用hasOwnProperty方法来判断属于当前对象自身的属性而排除原型链的属性。CoffeeScript并没有根本解决这个问题，但提供了own 关键字简化了解决方案

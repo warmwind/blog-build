@@ -15,11 +15,13 @@ meta:
 
 1\. object
 object = instance variables + methods(包括一个指向所属class的方法)。使用object.instance_variables 和object.methods可以查看对应的信息, 区别在于前者存在于object本身，而method存在于object的class中，这些method在class中被称作instance method，这也是为什么同一个class不同object可以共享方法，但是不能共享instance variable。
+
 2\. class
 class也是一个object，是Class的实例，拥有instance methods和指向父类的方法superclass。Class是Module的子类，所以一个class也是一个module。
+
 3\. module
 module与class没有根本差别，因为class本身就是module的子类，但是引入module与class的目的是不同的。通常来说，class用来实例化和继承，而module用来mix in或者作为namespace。
-
+READMORE
 下面的代码片段展示了部分上述内容
 
 ```ruby

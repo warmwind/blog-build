@@ -21,6 +21,7 @@ Backobone是一个JavaScript的前端框架，使具有复杂交互的页面实�
   * 与服务端交互的桥梁
 
 Backbone代码一个很显著的特点就是看到满篇的this.model，对新手来说理解这里的model到底是什么以及怎么样传递，什么时候要toJSON，什么时候直接传递，有一点不够直接。这里主要来介绍一下在Model与Collection和View通信中容易混淆的一些场景，希望有所帮助。
+READMORE
 
 1\. Model与View
 

@@ -19,7 +19,7 @@ Rails中，我们经常会在form中使用check_box这个helpler方法，在cont
   </div>
 <% end %>
 ```
-
+READMORE
 ```html
 <input name="post[category]" type="hidden" value="0" />
 <input id="post_category" name="post[category]" type="checkbox" value="1" />是否设置类型

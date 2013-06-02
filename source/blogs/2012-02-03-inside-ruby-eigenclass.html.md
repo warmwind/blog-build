@@ -24,7 +24,7 @@ end
 obj.my_singleton_method            # => "one singleton method"
 Object.new.my_singleton_method     # => NoMethodError
 ```
-
+READMORE
 那么对于singleton method如何用上述理论来解释呢？
 
 my_singleton_method不能存在于obj中，因为obj不是class，它也不能存在于Object这个class中，因为如果那样的话，所有的Object实例都会有这个方法，不会抛出异常。
