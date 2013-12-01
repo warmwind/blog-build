@@ -27,4 +27,4 @@ For development purpose, we also need:
 * Rake tasks to deploy app to simulators for quick look
 * Ajust styles in browser, no need to deploy each time
 
-So I create a repo in github called [phonegap-scaffold](https://github.com/warmwind/phonegap-scaffold). Feel free to fork it or give some feedback to imporve it.
+So I create a repo in github called [phonegap-scaffold](https://github.com/warmwind/phonegap-scaffold). 

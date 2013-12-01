@@ -5,7 +5,7 @@ tags: Rails, checkbox
 category: PROGRAMMING
 status: publish
 ---
-Rails中，我们经常会在form中使用check_box这个helpler方法，在controller中，可以通过params[:category]来获取category的值。然而，如果检查一下check_box这个helper方法生成的html代码，会有点不如想象那样直接可懂。
+Rails中，我们经常会在form中使用check\_box这个helpler方法，在controller中，可以通过params[:category]来获取category的值。然而，如果检查一下check_box这个helper方法生成的html代码，会有点不如想象那样直接可懂。
 
 例如下面一个简单的form中
 
@@ -21,6 +21,7 @@ Rails中，我们经常会在form中使用check_box这个helpler方法，在cont
 <% end %>
 ```
 READMORE
+
 ```html
 <input name="post[category]" type="hidden" value="0" />
 <input id="post_category" name="post[category]" type="checkbox" value="1" />是否设置类型
