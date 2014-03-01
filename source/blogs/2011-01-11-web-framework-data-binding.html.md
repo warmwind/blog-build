@@ -1,5 +1,5 @@
 ---
-title: Web Framework大杂烩（一）：Data Binding
+title: Web Framework大杂烩之Data Binding
 category: PROGRAMMING
 tags:
 - ASP.NET MVC

@@ -29,7 +29,7 @@ Backbone中的View主要用来展示Model以及绑定各种事件回掉。View�
 
 1）通过构造函数初始化
 
-```js
+```coffee
 var PostView = Backbone.View.extend();
 var Post = Backbone.Model.extend();
 var post = new Post({title: "post title"});
@@ -52,7 +52,7 @@ anotherPostView2与anotherPostView不同在于model被转化为了JSON对象，�
 
 三种方式都可以满足基本的数据展示需求，只是调用方式的不同，不过推荐使用第二种，因为完整的model对象拥有更完整的事件机制。比如，希望在model改变的时候重新渲染view，那么就可以通过下面的方式
 
-```js
+```coffee
 this.model.on('change', this.render, this);
 ```
 这样的基础是，当通过set改变model的属性时，会自动出发change事件。
@@ -61,7 +61,7 @@ this.model.on('change', this.render, this);
 
 View最重要的方法就是render，它决定如何展现数据。稍微复杂一些的View通常会通过underscore的template方法生成DOM模板，然后传入Model替换其中的Pleaceholder。例如Backbone的网站上给出的例子。
 
-```js
+```coffee
 var Bookmark = Backbone.View.extend({
   template: _.template(…),
   render: function() {
@@ -74,7 +74,7 @@ var Bookmark = Backbone.View.extend({
 
 那么这两种model与view的关联方式如何取舍呢？我的经验是，如果View只服务于特定的model，那么就在构造函数传入。如果随着model的不同，我们希望这个View可以渲染不同的模板，而View是同一个对象，那么就在render时调用，需要的话在render方法中使用
 
-```js
+```coffee
 this.model = model
 ```
 将传入的model应用于当前View的model。
@@ -83,7 +83,7 @@ this.model = model
 
 Collection是Backbone中一组有序的Model集合，当页面需要管理多个同种类型的Model时，Collection提了很多的便利，例如很多的集合操作，基于集合的事件。Collection可以指定包含的model对象类型，例如
 
-```js
+```coffee
 var Posts = Backbone.Collection.extend({
   model: Post
 });

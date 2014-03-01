@@ -29,7 +29,7 @@ READMORE
 
 CoffeeScript有两种循环，针对数组的for ... in和针对对象的for ... of。其中针对对象的循环在JS本身是具有陷阱的。JS中对对象的循环会将对象整个原型链中的属性全部都包括进来，所以通常需要使用hasOwnProperty方法来判断属于当前对象自身的属性而排除原型链的属性。CoffeeScript并没有根本解决这个问题，但提供了own 关键字简化了解决方案
 
-```coffee-script
+```coffee
 myRect =
   x: 100
   y: 200
@@ -49,7 +49,7 @@ for own key, value of myRect
 
 先看下面的例子
 
-```coffee-script
+```coffee
 class Foo
   constructor: (@value) ->
 

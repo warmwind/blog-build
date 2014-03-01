@@ -46,7 +46,7 @@ def create
   end
 ```
 
-```js
+```coffee
 $(document).on "ajax:complete", ".post form", (event, xhr, status) ->
   if status == "success"
     res = $.parseJSON xhr.responseText

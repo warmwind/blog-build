@@ -31,7 +31,7 @@ Live Version和Health Check可以实现这一点。
 
 也就是显示当前运行的版本。Rails中默认显示index页面，我们可以将这个页面稍作改变，以支持版本显示。
 
-```rhtml
+```erb
 #live_version.html.erb
 <!DOCTYPE html>
 <html>

@@ -129,11 +129,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  builder (~> 3.0.0)
-  gravatarify (~> 3.1.0)
-  middleman (~> 3.0.13)
-  middleman-blog (~> 3.2.0)
-  middleman-livereload (~> 3.1.0)
+  builder
+  gravatarify
+  middleman
+  middleman-blog
+  middleman-livereload
   middleman-syntax
   nokogiri
   redcarpet

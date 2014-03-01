@@ -27,7 +27,7 @@ favorite = function(language){
 favorite()
 ```
 
-```coffeescript
+```coffee
 favorite = (language = 'CoffeeScript') -> console.log "I love #{language} best"
 ```
 2）可变参数Splats
@@ -64,7 +64,7 @@ order = function(teams) {
 order(allTeams);
 ```
 
-```coffeescript
+```coffee
 
 allTeams = [
   'Chelsea'
@@ -89,7 +89,7 @@ order allTeams...
 
 在Ruby中有同样的语法，下面的例子实现了Fibonacci数列
 
-```coffeescript
+```coffee
 #Fibonacci
 [last, current] = [0,1]
 
@@ -101,7 +101,7 @@ console.log last
 ```
 更加强大的是当右侧是一个对象时，会根据该对象的属性进行赋值：
 
-```coffeescript
+```coffee
 class Shape
   constructor: (@width) ->
   computeArea: -> throw new Error('I am an abstract class!')
@@ -121,7 +121,7 @@ showArea new Square(2) # 4
 showArea new Circle(2) # pi
 ```
 
-```coffeescript
+```coffee
 myRect =
   x: 100
   y: 200
@@ -140,7 +140,7 @@ console.log y
 4）class与inheritance
 定义了class与extends来是语法来包装JS使其更加类似面向对象的语言。给个简单例子
 
-```coffeescript
+```coffee
 class Shape
   constructor: (@width) ->
   computeArea: -> throw new Error('I am an abstract class!')

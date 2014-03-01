@@ -9,7 +9,7 @@ Rails中，我们经常会在form中使用check\_box这个helpler方法，在con
 
 例如下面一个简单的form中
 
-```css+erb
+```erb
 <%= form_for(@post) do |f| %>
   <div class="field">
     <%= f.label :category %>
