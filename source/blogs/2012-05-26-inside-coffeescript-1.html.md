@@ -18,7 +18,6 @@ READMORE
 1）函数默认参数 + 字符串连接
 
 ```js
-//JavaScript
 favorite = function(language){
   if(language == null){
     language = 'CoffeeScript';
@@ -26,15 +25,16 @@ favorite = function(language){
   console.log("I love " + language + " best");
 }
 favorite()
+```
 
-//CoffeeScript
+```coffeescript
 favorite = (language = 'CoffeeScript') -> console.log "I love #{language} best"
 ```
 2）可变参数Splats
 
 这样一个例子：足球赛事中，一般的排名是，冠军，亚军，和其他球队，这里再复杂一点，加上最后一名。也就是：
 
-```js
+```text
 Given
 
 allTeams = ['Chelsea', 'Bayern', 'Barcelona', 'Real Madrid', 'Milan', 'Inter', 'HengDa']
@@ -49,7 +49,6 @@ last:HengDa
 用JS和CoffeeScript分别实现
 
 ```js
-//JS
 var allTeams = ['Chelsea', 'Bayern', 'Barcelona', 'Real Madrid', 'Milan', 'Inter', 'HengDa'];
 order = function(teams) {
   var champion = teams[0];
@@ -63,8 +62,10 @@ order = function(teams) {
 };
 
 order(allTeams);
+```
 
-//CoffeeScript
+```coffeescript
+
 allTeams = [
   'Chelsea'
   'Bayern'
@@ -83,11 +84,12 @@ order = (champion, runnerup, others..., last) ->
 
 order allTeams...
 ```
+
 3）Destructing Assignment
 
 在Ruby中有同样的语法，下面的例子实现了Fibonacci数列
 
-```js
+```coffeescript
 #Fibonacci
 [last, current] = [0,1]
 
@@ -99,7 +101,7 @@ console.log last
 ```
 更加强大的是当右侧是一个对象时，会根据该对象的属性进行赋值：
 
-```js
+```coffeescript
 class Shape
   constructor: (@width) ->
   computeArea: -> throw new Error('I am an abstract class!')
@@ -119,7 +121,7 @@ showArea new Square(2) # 4
 showArea new Circle(2) # pi
 ```
 
-```js
+```coffeescript
 myRect =
   x: 100
   y: 200
@@ -138,7 +140,7 @@ console.log y
 4）class与inheritance
 定义了class与extends来是语法来包装JS使其更加类似面向对象的语言。给个简单例子
 
-```js
+```coffeescript
 class Shape
   constructor: (@width) ->
   computeArea: -> throw new Error('I am an abstract class!')

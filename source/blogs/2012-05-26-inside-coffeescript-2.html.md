@@ -22,13 +22,14 @@ console.log('' == '0'); //false
 console.log(0 =='');    //true
 console.log(0 == '0');  //true
 ```
+
 而在CoffeeScript中，如果使用==，将会自动编译为===，这从根本上解决了这个问题，另外还提供了一些更具语义的方法名，如 is, isnt等。
 READMORE
 2\. Loop
 
 CoffeeScript有两种循环，针对数组的for ... in和针对对象的for ... of。其中针对对象的循环在JS本身是具有陷阱的。JS中对对象的循环会将对象整个原型链中的属性全部都包括进来，所以通常需要使用hasOwnProperty方法来判断属于当前对象自身的属性而排除原型链的属性。CoffeeScript并没有根本解决这个问题，但提供了own 关键字简化了解决方案
 
-```js
+```coffee-script
 myRect =
   x: 100
   y: 200
@@ -43,11 +44,12 @@ for key, value of myRect
 for own key, value of myRect
   console.log key
 ```
+
 3\. Binding
 
 先看下面的例子
 
-```js
+```coffee-script
 class Foo
   constructor: (@value) ->
 
@@ -73,7 +75,7 @@ anotherRobustDisplay()           #20
 
 要找到根本的原因，得要提一下JS的Scope和Context的概念
 
-[<<CoffeeScript: Accelerated JavaScript Development>>](http://book.douban.com/subject/6310125/)一书中给出了这样的描述
+[\<\<CoffeeScript: Accelerated JavaScript Development\>\>](http://book.douban.com/subject/6310125/)一书中给出了这样的描述
 > Scope: A variable’s scope is its home, as defined by three rules:
 >
 > *  Every function creates a scope, and the only way to create a scope is to define a function.
