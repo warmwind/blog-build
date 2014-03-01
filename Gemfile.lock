@@ -96,6 +96,7 @@ GEM
       rack
     rack-test (0.6.2)
       rack (>= 1.0)
+    rake (10.1.0)
     rb-fsevent (0.9.3)
     redcarpet (3.0.0)
     rouge (0.3.10)
@@ -136,4 +137,5 @@ DEPENDENCIES
   middleman-livereload
   middleman-syntax
   nokogiri
+  rake
   redcarpet
