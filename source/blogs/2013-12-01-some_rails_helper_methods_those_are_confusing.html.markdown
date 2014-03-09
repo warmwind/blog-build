@@ -12,7 +12,7 @@ Rails中有非常多强大的View Helper，今天其实想在这里简单总结�
 
 READMORE
 
-1\. h
+#### h
 
 我们经常需要在页面上动态展示文字，这些完全可能来自用户的输入。所以为了防止XSS，在页面渲染时，需要对文字进行转义。在Rails2时，经常见到如下的代码
 
@@ -29,7 +29,7 @@ include ERB::Util
 is a &gt; 0 &amp; a &lt; 10?
 ```
 
-2\. html_safe
+#### html_safe
 
 其实h方法的实现依赖此方法，其实现中首先判断是否是html_safe，如果是就直接返回，否则做转义替换。
 
@@ -64,10 +64,10 @@ def group(content)
 end
 ```
 
-3\. simple_format
+#### simple_format
 
 这个方法比较好理解，顾名思义，用来格式化字符串的，主要的目的是将两个或多个换行符(\n)替换成(p)， 一个换行符替换成(&lt;br /&gt;)
 
-4\. sanitize
+#### sanitize
 
 它提供了比h方法更加灵活转义策略，可以自定义不需要转义的tag。例如需要在页面显示让用自定义某些style时，就可以可以允许&lt;style&gt;标签，而不将其转义。
