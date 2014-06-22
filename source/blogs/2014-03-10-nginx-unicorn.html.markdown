@@ -76,6 +76,7 @@ server {
 ```
 
 上面只是简单介绍了一下unicorn和ngxin如何工作以及如何配置，下面的一些文章有更详细的介绍：
+
 * [http://sirupsen.com/setting-up-unicorn-with-nginx](http://sirupsen.com/setting-up-unicorn-with-nginx)
 * [https://blog.engineyard.com/2010/everything-you-need-to-know-about-unicorn](https://blog.engineyard.com/2010/everything-you-need-to-know-about-unicorn)
 * [https://github.com/blog/517-unicorn](https://github.com/blog/517-unicorn)
