@@ -11,49 +11,25 @@
 
 <% wrap_layout :layout do %>
   <article class='article-container clearfix'>
-    <div class="span7">
-      <h1><%= current_page.title %></h1>
-      <div class="more-info clearfix">
-        <div class="date pull-left"><%= current_page.date.strftime('%e %b %Y') %></div>
-        <%= partial :tags, locals: {tags: current_page.tags} %>
-        <!-- JiaThis Button BEGIN -->
-        <div class="jiathis_style_24x24 pull-right">
-          <a class="jiathis_button_qzone"></a>
-          <a class="jiathis_button_tsina"></a>
-          <a class="jiathis_button_tqq"></a>
-          <a class="jiathis_button_weixin"></a>
-          <a class="jiathis_button_renren"></a>
-        </div>
-        <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1358051221670389" charset="utf-8"></script>
-        <!-- JiaThis Button END -->
+    <h1><%= current_page.title %></h1>
+    <div class="more-info clearfix">
+      <div class="date pull-left"><%= current_page.date.strftime('%e %b %Y') %></div>
+      <%= partial :tags, locals: {tags: current_page.tags} %>
+      <!-- JiaThis Button BEGIN -->
+      <div class="jiathis_style_24x24 pull-right">
+        <a class="jiathis_button_qzone"></a>
+        <a class="jiathis_button_tsina"></a>
+        <a class="jiathis_button_tqq"></a>
+        <a class="jiathis_button_weixin"></a>
+        <a class="jiathis_button_renren"></a>
       </div>
-      <div class="blog-content"><%= yield %></div>
+      <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1358051221670389" charset="utf-8"></script>
+      <!-- JiaThis Button END -->
     </div>
-    <div class="span1"></div>
-    <div class="span3 right-col">
-      <div class="about">
-        <h4>关于我</h4>
-        <div class="about-detail">
-          <div class="name"><a href="/about.html">姜鹏</a></div>  
-          <div class="name">Senior Consultant @ <a href='http://www.thoughtworks.com.cn' target='_blank'>ThoughtWorks</a></div>
-          <div class="name"><a href='https://jinshuju.net' target='_blank'>金数据</a>核心开发人员</div>
-          <wb:follow-button uid="1675778455" type="red_1" width="67" height="24" ></wb:follow-button>
-        </div>
-      </div>
-      <div class="recent">
-        <h4>最近的文章</h4>
-        <ol>
-          <% blog.articles[0...10].each do |article| %>
-            <li><%= link_to article.title, article %></li>
-          <% end %>
-        </ol>
-      </div>
-    </div>
-    
+    <div class="blog-content"><%= yield %></div>
   </article>
   <div class="rows">
-    <div class="span8"><%= partial "disqus" %></div>
-    <div class="span3"></div>
+    <%= partial "disqus" %>
   </div>
   
 <% end %>
