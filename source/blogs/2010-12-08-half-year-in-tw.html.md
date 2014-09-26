@@ -2,7 +2,7 @@
 title: Half a year in TW
 category: WORK
 tags:
-- 压力
+- pressure
 - coach
 - pair
 date: 2010-12-08

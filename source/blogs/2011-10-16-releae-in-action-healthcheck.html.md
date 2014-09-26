@@ -2,8 +2,8 @@
 title: 软件发布实战 -- 状态检查
 category: WORK
 tags:
-- 发布
-- 集成
+- release
+- integration
 - feedback
 - Health Check
 date: 2011-10-16

@@ -4,10 +4,10 @@ category: WORK
 tags:
 - .Net
 - Android
-- 压力
-- 交付
-- 产品
-- 用户
+- pressure
+- delivery
+- product
+- customer
 - Java
 - Rails
 date: 2013-02-13

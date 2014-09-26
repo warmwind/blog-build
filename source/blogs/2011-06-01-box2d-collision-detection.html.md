@@ -5,8 +5,7 @@ tags:
 - Angry Birds
 - Box2D
 - CCD
-- 碰撞检测
-- 物理引擎
+- Physical Engine
 - TOI
 - Tunneling
 date: 2011-06-01

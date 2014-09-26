@@ -1,7 +1,7 @@
 ---
 title: 不要心存侥幸
 category: PROGRAMMING
-tags: 部署
+tags: deploy
 date: 2013-05-30
 status: publish
 type: post

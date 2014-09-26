@@ -1,7 +1,7 @@
 ---
 title: 支付宝集成——校验与应答
 date: 2014-01-04
-tags: 支付宝, 校验 
+tags: alipay
 category: PROGRAMMING
 status: publish
 ---

@@ -3,9 +3,8 @@ title: Validation Refactor -- Command Pattern
 category: PROGRAMMING
 tags:
 - Command Pattern
-- 重构
 - refactor
-- 测试
+- test
 date: 2011-03-17
 status: publish
 type: post

@@ -1,7 +1,7 @@
 ---
 title: 支付宝集成——生成请求URL
 date: 2014-01-03
-tags: 支付宝, 手机支付, 网页支付
+tags: alipay
 category: PROGRAMMING
 status: publish
 ---

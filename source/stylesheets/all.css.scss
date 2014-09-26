@@ -4,7 +4,6 @@
 @import 'github';
 @import 'githubstyle';
 @import 'line-numbers';
-@import 'site';
 @import 'article';
 @import 'categories';
 @import 'apps';
@@ -53,6 +52,25 @@
       color: white;
       margin-left: 20px;
       margin-top: 20px;
+    }
+  }
+  .tags-result-container {
+    .tag {
+      background: #222;
+      padding: 12px;
+      letter-spacing: 1px;
+      color: white;
+      font-size: 16px;
+    }
+    ol {
+      list-style: none;
+      font-size: 18px;
+      li {
+        line-height: 200%;        
+      }
+      .date {
+        margin-right: 30px;
+      }
     }
   }
 }

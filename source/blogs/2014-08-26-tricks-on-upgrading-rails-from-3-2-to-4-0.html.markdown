@@ -1,7 +1,7 @@
 ---
 title: Tricks On Upgrading Rails From 3.2 to 4.0 
 date: 2014-08-26
-tags: Rails4,Mongoid,Capistrano,Upgrade
+tags: Rails,Mongoid,Capistrano,Upgrade
 category: PROGRAMMING
 status: publish
 published: true

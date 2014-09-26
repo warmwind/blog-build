@@ -2,10 +2,10 @@
 title: 软件发布实战 -- 集成
 category: WORK
 tags:
-- 发布
-- 集成
+- release
+- integration
 - heroku
-- 测试
+- test
 date: 2011-10-16
 status: publish
 type: post

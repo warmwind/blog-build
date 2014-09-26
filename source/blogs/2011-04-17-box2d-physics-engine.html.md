@@ -4,7 +4,6 @@ category: PROGRAMMING
 tags:
 - Angry Birds
 - Box2D
-- 物理引擎
 - Physics Engine
 date: 2011-04-17
 status: publish

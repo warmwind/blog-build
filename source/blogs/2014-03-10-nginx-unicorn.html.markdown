@@ -1,7 +1,7 @@
 ---
 title: Nginx 与 Unicorn
 date: 2014-03-10
-tags: Capistrano,Nginx,Rails,部署
+tags: Capistrano,Nginx,Rails,deploy
 category: PROGRAMMING
 status: publish
 ---

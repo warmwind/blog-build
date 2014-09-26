@@ -4,7 +4,6 @@ category: PROGRAMMING
 tags:
 - DateTime
 - test
-- 测试
 date: 2010-12-08
 status: publish
 type: post

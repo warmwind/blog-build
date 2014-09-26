@@ -4,7 +4,7 @@ category: PROGRAMMING
 tags:
 - Box2D
 - Collision Detection
-- 碰撞检测
+- Physical Engine
 date: 2011-06-01
 status: publish
 type: post
