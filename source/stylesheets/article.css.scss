@@ -1,6 +1,9 @@
 @import '_mixins';
 .article-container {
-  padding: 20px 40px;
+  padding: 20px 0;
+  .highlight {
+    margin: 10px 0;
+  }
   p {
     margin-right: 0;
     font-size: 16px;

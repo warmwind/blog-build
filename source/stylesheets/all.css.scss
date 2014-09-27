@@ -1,8 +1,8 @@
 @import 'normalize';
 
 @import 'bootstrap';
-@import 'github';
 @import 'githubstyle';
+@import 'github';
 @import 'line-numbers';
 @import 'article';
 @import 'categories';
@@ -11,7 +11,7 @@
 
 [class*="span"] {
   margin-left: 0; }
-
+  
 .container{
   &.main-content {
     margin: 100px auto;
