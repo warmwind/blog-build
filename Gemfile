@@ -1,7 +1,8 @@
 source 'http://ruby.taobao.org'
 
-gem "middleman"
-gem "middleman-blog"
+gem 'middleman', '~> 3.3.6'
+gem 'middleman-blog', '~> 3.5.3'
+gem 'middleman-deploy', '~> 0.3.0'
 gem "redcarpet"
 gem "middleman-syntax"
 gem "nokogiri"

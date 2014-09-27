@@ -90,9 +90,15 @@ set :markdown_engine, :redcarpet
 set :markdown, fenced_code_blocks: true, smartypants: true
 activate :syntax, :line_numbers => true
 
+activate :deploy do |deploy|
+  deploy.method = :git
+  deploy.remote = "git@github.com:warmwind/warmwind.github.io.git"
+  deploy.branch = "master"
+  deploy.build_before = true # default: false
+end
 
 # Build-specific configuration
-configure :build do
+# configure :build do
   # For example, change the Compass output style for deployment
   # activate :minify_css
   
@@ -112,4 +118,4 @@ configure :build do
   
   # Or use a different image path
   # set :http_path, "/Content/images/"
-end
+# end
