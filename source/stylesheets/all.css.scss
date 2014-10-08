@@ -1,77 +1,85 @@
 @import 'normalize';
 
-@import 'bootstrap';
 @import 'githubstyle';
 @import 'github';
 @import 'line-numbers';
 @import 'article';
-@import 'categories';
+@import 'index';
 @import 'apps';
 @import 'about';
+@import 'tag';
 
-[class*="span"] {
-  margin-left: 0; }
-  
-.container{
-  &.main-content {
-    margin: 100px auto;
+.container-fluid {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.main-content {
+  margin: 100px auto;
+}
+.navbar-header, .nav {
+  .rss {
+    a {
+      padding: 9px 15px;  
+    }
   }
-
-  .brand {
-    height: 60px;
+  .navbar-brand {
+    height: auto;
     img {
       @include border-radius(50%);
+      @include square(60px);
     }
     span {
       margin-left: 10px;
-      line-height: 60px;
     }
+
   }
-  .nav {
-    margin: 20px auto;
-    .rss {
-      a {
-        padding: 0 15px;  
-      }
-    }
+}
+.navbar-collapse {
+  padding-top: 20px;
+  &.in {
+    padding-top: 0;
   }
-  .tag{
-    font-size: 12px;
+}
+.navbar-toggle {
+  margin-top: 30px;
+}
+
+.date-articles {
+  li {
     list-style: none;
-    @include inline-block;
-    background: #aaa;
-    padding: 5px;
-    letter-spacing: 1px;
-    a {
-      color: white;
+    line-height: 250%;
+    .date {
+      margin-right: 10px;
     }
   }
-  &.tags {
-    .tag-title {
-      font-size: 16px;
-      color: white;
-      margin-left: 20px;
-      margin-top: 20px;
+}
+
+@media (max-width: 767px) { 
+  .container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .main-content {
+    margin: 70px auto;
+  }
+  .navbar-header {
+    .navbar-brand {
+      padding: 8px 15px;
+      img {
+        @include square(40px);
+      }
+    }
+    .navbar-toggle {
+      margin-top: 12px;
     }
   }
-  .tags-result-container {
-    .tag {
-      background: #222;
-      padding: 12px;
-      letter-spacing: 1px;
-      color: white;
-      font-size: 16px;
-    }
-    ol {
-      list-style: none;
-      font-size: 18px;
-      li {
-        line-height: 200%;        
-      }
-      .date {
-        margin-right: 30px;
-      }
-    }
+  .tags-container {
+    margin-bottom: 5px;
+  }
+  .nav li.apps-menu {
+    display: none;
   }
 }
 

@@ -2,26 +2,14 @@
 
 <% content_for :navs do %>
   <li class='active'><a href="/index.html">所有文章</a></li>
-  <li><a href="/apps.html">小程序们</a></li>
+  <li class='apps-menu'><a href="/apps.html">小程序们</a></li>
   <li><a href="/about.html">关于我</a></li>
   <li class='rss'><a href="/feed.xml"><img src="/images/rss.png" alt=""></a></li>
 <% end %>
-<div class='categories'>
-  <% blog.articles.group_by{|a| a.date.year}.each do |year, articles| %>
-    <div class="rows clearfix">
-      <div class="span3"></div>
-      <div class="span7 category">
-        <div class="span2"><h3 class='year'><%= "#{year} (#{articles.size})" %></h3></div>
-        <ol class='span5'>
-          <% articles.each do |article| %>
-            <li class='article clearfix'>
-              <span class='date span1'><%= article.date.strftime('%b %d') %></span>
-              <span class='title span4'><%= link_to article.title, article %></span>
-            </li>
-          <% end %>      
-        </ol>
-      </div>
-      <div class="span1"></div>
-    </div>
-  <% end %>
-</div>
+
+<% blog.articles.group_by{|a| a.date.year}.each do |year, articles| %>
+  <div class="row clearfix index">
+    <div class="col-xs-12 col-sm-5"><h3 class='year'><%= "#{year} (#{articles.size})" %></h3></div>
+    <%= partial :date_article, locals: {articles: articles, date_format: '%b %d'} %>
+  </div>
+<% end %>

@@ -3,24 +3,26 @@
 
 <% content_for :navs do %>
   <li class='active'><a href="/index.html">所有文章</a></li>
-  <li><a href="/apps.html">小程序们</a></li>
+  <li class='apps-menu'><a href="/apps.html">小程序们</a></li>
   <li><a href="/about.html">关于我</a></li>
   <li class='rss'><a href="/feed.xml"><img src="/images/rss.png" alt=""></a></li>
 <% end %>
 
 <% wrap_layout :layout do %>
   <article class='article-container clearfix'>
-    <h1><%= current_page.title %></h1>
-    <div class="more-info clearfix">
-      <div class="date pull-left"><%= current_page.date.strftime('%e %b %Y') %></div>
-      <%= partial :tags, locals: {tags: current_page.tags} %>
+    <div class="row">
+      <h1><%= current_page.title %></h1>  
+    </div>
+    <div class="row article-info">
+      <div class="col-xs-12 col-sm-10 col-md-10">
+        <span class="date"><%= current_page.date.strftime('%e %b %Y') %></span>
+        <%= partial :tags, locals: {tags: current_page.tags} %>
+      </div>
       <!-- JiaThis Button BEGIN -->
-      <div class="jiathis_style_24x24 pull-right">
-        <a class="jiathis_button_qzone"></a>
+      <div class="jiathis_style_24x24 col-xs-12 col-sm-2">
+        <a class="jiathis_button_weixin"></a>
         <a class="jiathis_button_tsina"></a>
         <a class="jiathis_button_tqq"></a>
-        <a class="jiathis_button_weixin"></a>
-        <a class="jiathis_button_renren"></a>
       </div>
       <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1358051221670389" charset="utf-8"></script>
       <!-- JiaThis Button END -->

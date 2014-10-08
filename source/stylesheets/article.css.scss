@@ -1,6 +1,5 @@
 @import '_mixins';
 .article-container {
-  padding: 20px 0;
   .highlight {
     margin: 10px 0;
   }
@@ -12,37 +11,55 @@
   h1 {
     text-align: center;
     margin-top: 0;
-    font-size: 30px;
+    font-size: 26px;
+    padding: 10px 15px;
   }
-  .more-info{
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    padding-top: 10px;
-    border-bottom: 1px solid #aaa;
+  .article-info {
+    line-height: 150%;
     .date {
-      line-height: 22px;
+      margin-right: 5px;
     }
     .tags-container {
-      padding-left: 10px;
-      border-left: 1px solid #aaa;
-      margin: 0 0 0 10px;
-      line-height: 20px;
-      .tag {
-        padding: 2px;
-      }
+      margin-bottom: 0;
+      padding-left: 0;
+      @include inline-block;
+      .tag{
+        font-size: 12px;
+        list-style: none;
+        @include inline-block;
+        background: #aaa;
+        padding: 5px;
+        letter-spacing: 1px;
+        a {
+          color: white;
+        }
+      }  
     }
+
   }
-  .right-col{
-    li{
-      list-style: square;
-    }
-    .about-detail {
-      padding-left: 25px;
-    }
-  }
+
   .blog-content {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    margin-top: 10px;
     blockquote p {
       font-size: 14px;
     }
+    pre {
+      background-color: transparent;
+      white-space: pre-wrap;
+      word-break: break-word;
+      word-wrap: break-word;
+    }
+    a, code {
+      word-break: break-all;
+      word-wrap: break-all;
+    }
+  }
+}
+
+@media (max-width: 767px) { 
+  .jiathis_style_24x24 {
+    display: none;
   }
 }

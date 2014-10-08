@@ -1,51 +1,21 @@
 <% content_for :title, "关于我" %>
 <% content_for :navs do %>
   <li><a href="/index.html">所有文章</a></li>
-  <li><a href="/apps.html">小程序们</a></li>
+  <li class='apps-menu'><a href="/apps.html">小程序们</a></li>
   <li class='active'><a href="/about.html">关于我</a></li>
   <li class='rss'><a href="/feed.xml"><img src="images/rss.png" alt=""></a></li>
 <% end %>
 
-<div class="about">
-  <div class="rows clearfix">
-    <div class="span3">
-      <div class="pull-right"><%= gravatar_tag 'pengj0520@gmail.com', :size => 200%></div>
-    </div>
-    <div class="span1"></div>
-    <div class="span7 details">
-      <h2>姜鹏</h2>
-      <p>Senior Developer@ThoughtWorks，<a href="https://jinshuju.net" target="_blank">金数据</a>核心开发人员，<a href="http://book.douban.com/subject/25827296" target="_blank">《软件开发与创新》</a>译者之一，敏捷开发实践者</p>
-      <h3>我爱好的</h3>
-      <ul>
-        <li>Ruby On Rails</li>
-        <li>JavaScript</li>
-        <li>CSS</li>
-        <li>JAVA</li>
-      </ul>
-      <h3>我的社交</h3>
-      <ul>
-        <li>
-          <img src="images/weibo.png" alt="">
-          <a href="http://weibo.com/u/1675778455">warmwindj</a>
-          <span class='add-weibo'>          
-            <wb:follow-button uid="1675778455" type="red_1" width="67" height="24" ></wb:follow-button>
-          </span>
-        </li>
-        <li>
-          <img src="images/douban.png" alt="">
-          <a href="http://www.douban.com/people/1794545/">warmwind</a>
-        </li>
-        <li>
-          <img src="images/github.png" alt="" class='github'>
-          <a href="https://github.com/warmwind">warmwind</a>
-        </li>
-      </ul>
-      <h3>联系方式</h3>
-      <ul>
-        <li>Send Email to Me: <a href="mailto:pengj0520@gmail.com">pengj0520@gmail.com</a></li>
-      </ul>
-    </div>
-
+<div class="row about">
+  <div class="col-xs-12">
+    <h1>姜 鹏</h1>
+    <ul class="social">
+      <li><a href="https://github.com/warmwind"><i class="fa fa-github-square"></i></a></li>
+      <li><a href="http://www.douban.com/people/1794545/"><i class="fa fa-douban"></i></a></li>
+      <li><a href="mailto:pengj0520@gmail.com"><i class="fa fa-envelope"></i></a></li>
+      <li><a href="http://weibo.com/u/1675778455"><i class="fa fa-weibo"></i></a></li>
+    </ul>
   </div>
-
+  
+  <p class="col-xs-12">Senior Developer@ThoughtWorks，<a href="https://jinshuju.net" target="_blank"> 金数据</a> 核心开发人员，<a href="http://book.douban.com/subject/25827296" target="_blank">《软件开发与创新》</a>译者之一，敏捷开发实践者</p>
 </div>
