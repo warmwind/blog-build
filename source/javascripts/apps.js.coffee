@@ -1,0 +1,2 @@
+$ ->
+  $('.angry-tank').focus()

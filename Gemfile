@@ -9,6 +9,7 @@ gem "nokogiri"
 gem "middleman-livereload"
 gem "gravatarify"
 gem "rake"
+gem "middleman-minify-html"
 
 # For feed.xml.builder
 gem "builder"
