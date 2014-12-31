@@ -9,7 +9,7 @@ Capistrano, Nginx 与 Unicorn的搭配作为Rails应用的部署方式是现在�
 
 READMORE
 
-###Unicorn
+####Unicorn
 Unicorn是应用服务器，以master/workers的模式工作。当master进程启动时，会将整个应用加载到内存中，之后会fork出若干个worker，master不处理任何请求，这时worker的工作。master进程管理所有的worker，它清楚每个worker处理请求的时间，当超过某个阈值时，会kill掉这个worker，并立刻fork出一个新的，以防止大量耗时的请求将worker耗尽。fork一个worker是瞬间完成的。
 
 ####负载均衡
