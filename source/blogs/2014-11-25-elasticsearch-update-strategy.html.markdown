@@ -6,7 +6,7 @@ category: PROGRAMMING
 status: publish
 published: true
 ---
-[前一篇](/blogs/2014/11/24/elasticsearch_mapping.html)文章介绍了如何在Elasticsearch上做动态映射，这篇文章会介绍下如何更有效的做ES的数据更新。
+[前一篇](/blogs/2014/11/24/elasticsearch-mapping.html)文章介绍了如何在Elasticsearch上做动态映射，这篇文章会介绍下如何更有效的做ES的数据更新。
 
 ### 更新频率
 如果把ES看做另一个数据库，那么它总是会比系统原有的数据库滞后，因为数据会先存入原有数据库，再同步到ES。那么滞后的时间就是一个敏感的参数。根据业务的不同，差别很大。我了解到有的系统可以接受10分钟以上的延迟，不过我们作为一个数据平台，用户提交或修改数据后，是希望能立刻查询到修改的结果的，所以理论上是越短越好，但频繁的更新会给ES服务器带来很大的[开销](https://www.found.no/foundation/keeping-elasticsearch-in-sync/#the-problems-of-too-frequent-updates-and-non-batch-updates)。
