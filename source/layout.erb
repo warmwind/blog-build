@@ -11,6 +11,9 @@
     <%= yield_content :head %>
     <% title = yield_content :title %>
     <title><%= title.present? ? title : current_page.data.title %> - Jiang Peng</title>
+    <%= partial "ga" %>
+    <%= partial "howxm" %>
+    <%= partial "baidu" %>
   </head>
   <body>
     <nav class="navbar  navbar-default navbar-fixed-top" role="navigation">
@@ -40,6 +43,5 @@
       <%= yield %>
     </div>
     <%= yield_content :scripts %>
-    <%= partial "ga" %>
   </body>
 </html>

@@ -1,5 +1,5 @@
 GEM
-  remote: http://gems.ruby-china.org/
+  remote: https://gems.ruby-china.com/
   specs:
     activesupport (4.1.16)
       i18n (~> 0.6, >= 0.6.9)
@@ -165,4 +165,4 @@ DEPENDENCIES
   redcarpet
 
 BUNDLED WITH
-   1.14.6
+   1.17.2

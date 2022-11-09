@@ -1,4 +1,4 @@
-source 'http://gems.ruby-china.org'
+source 'https://gems.ruby-china.com'
 
 gem 'middleman', '~> 3.3.6'
 gem 'middleman-blog', '~> 3.5.3'
